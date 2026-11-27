@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - King Jonh D. De Lara</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            color: #1e3a8a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 35px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 119, 182, 0.15);
+            text-align: center;
+            border: 2px solid #93c5fd;
+            max-width: 480px;
+            width: 100%;
+        }
+
+        .contact-box {
+            background-color: #f0f9ff;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 5px solid #2563eb;
+            text-align: left;
+            margin: 20px 0 25px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 12px 0;
+            font-size: 14px;
+            color: #1e3a8a;
+            word-break: break-word;
+        }
+
+        .contact-item strong {
+            color: #1d4ed8;
+            min-width: 130px;
+            display: inline-block;
+        }
+
+        .contact-icon {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        nav button {
+            background-color: #60a5fa;
+            color: white;
+            border: none;
+            padding: 11px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 25px;
+            margin: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav button.active, nav button:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(37, 99, 235, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1 style="color: #1d4ed8; margin: 0; font-size: 28px;">GET IN TOUCH</h1>
+        <p style="color: #475569; font-size: 15px; margin-top: 5px;">Contact Information</p>
+
+        <!-- Contact Information Container -->
+        <div class="contact-box">
+            <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <strong>CONTACT #:</strong> 09853292062
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <strong>EMAIL ADDRESS:</strong> dorloneskingjohn@gmail.com
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">🏠</span>
+                <strong>ADDRESS:</strong> Barangay 23-C (POB.), Davao City
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📘</span>
+                <strong>FACEBOOK:</strong> <a href="https://www.facebook.com/KhaneJanna" target="_blank" style="color: #2563eb; text-decoration: none; font-weight: 600;">Kj Dorlones</a>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <nav>
+            <a href="index.html"><button>HOME</button></a>
+            <a href="about.html"><button>ABOUT ME</button></a>
+            <a href="contact.html"><button class="active">CONTACT ME</button></a>
+        </nav>
+    </div>
+
+</body>
+</html>
