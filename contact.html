@@ -59,6 +59,68 @@
             margin-right: 10px;
         }
 
+        .form-container {
+            background-color: #f0f9ff;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #bfdbfe;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .form-container h3 {
+            color: #1d4ed8;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #1d4ed8;
+            margin-bottom: 4px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #93c5fd;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 13px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+        }
+
+        .submit-btn {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #1d4ed8;
+        }
+
         nav button {
             background-color: #60a5fa;
             color: white;
@@ -90,11 +152,11 @@
         <div class="contact-box">
             <div class="contact-item">
                 <span class="contact-icon">📞</span>
-                <strong>CONTACT #:</strong> 09853292062
+                <strong>CONTACT #:</strong> 09123456789
             </div>
             <div class="contact-item">
                 <span class="contact-icon">✉️</span>
-                <strong>EMAIL ADDRESS:</strong> dorloneskingjohn@gmail.com
+                <strong>EMAIL #:</strong> kingjonh.delara@deped.gov.ph
             </div>
             <div class="contact-item">
                 <span class="contact-icon">🏠</span>
@@ -102,8 +164,28 @@
             </div>
             <div class="contact-item">
                 <span class="contact-icon">📘</span>
-                <strong>FACEBOOK:</strong> <a href="https://www.facebook.com/KhaneJanna" target="_blank" style="color: #2563eb; text-decoration: none; font-weight: 600;">Kj Dorlones</a>
+                <strong>FACEBOOK:</strong> <a href="https://www.facebook.com/" target="_blank" style="color: #2563eb; text-decoration: none; font-weight: 600;">Kj Dorlones</a>
             </div>
+        </div>
+
+        <!-- Interactive Question Form -->
+        <div class="form-container">
+            <h3>💬 Need to ask to know me?</h3>
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="question">Your Question or Message:</label>
+                    <textarea id="question" name="question" rows="3" placeholder="Ask me anything..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
 
         <!-- Navigation Buttons -->
